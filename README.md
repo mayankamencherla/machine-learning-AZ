@@ -10,3 +10,7 @@
 ```bash
 $ git clone https://github.com/mayankamencherla/machine-learning-AZ.git
 ```
+
+## Sections
+- Data Preprocessing
+- Simple Linear Regression
