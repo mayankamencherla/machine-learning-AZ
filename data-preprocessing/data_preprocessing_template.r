@@ -19,4 +19,11 @@ dataset$Purchased = factor(dataset$Purchased,
     levels = c('Yes', 'No'),
     labels = c(0, 1))
 
-print(dataset)
+# Split into testing and training sets
+# install.packages('caTools')
+library(caTools)
+set.seed(123)
+split = sample.split(dataset$Purchased, SplitRatio=0.8)
+
+training_set = subset(dataset, split == TRUE)
+testing_set = subset(dataset, split == FALSE)
